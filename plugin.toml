@@ -1,0 +1,43 @@
+id = "mushketer888.arduino"
+name = "Arduino"
+version = "0.1.0"
+description = "Build, upload and monitor Arduino sketches via Arduino CLI, with board and port selection."
+authors = ["mushketer888 <mushketer888@gmail.com>"]
+license = "Apache-2.0"
+change-notes = "0.1.0 — Initial release: Build Sketch, Upload Sketch, Serial Monitor, and interactive board/port selection."
+categories = ["tools"]
+engines.openidea = "^1.0"
+wasm = "dist/plugin.wasm"
+activation = ["on-command:*", "on-language:arduino"]
+
+[capabilities]
+required = [
+  "project.read",
+  "storage",
+  "process:arduino-cli"
+]
+
+[[contributes.commands]]
+id = "build"
+title = "Arduino: Build Sketch"
+category = "Arduino"
+
+[[contributes.commands]]
+id = "upload"
+title = "Arduino: Upload Sketch..."
+category = "Arduino"
+
+[[contributes.commands]]
+id = "serial-monitor"
+title = "Arduino: Serial Monitor..."
+category = "Arduino"
+
+[[contributes.commands]]
+id = "select-board"
+title = "Arduino: Select Board"
+category = "Arduino"
+
+[[contributes.commands]]
+id = "select-port"
+title = "Arduino: Select Port"
+category = "Arduino"
