@@ -19,6 +19,17 @@ Arduino integration for [OpenIDEA](https://github.com/l0ng-ai/openidea):
 - `Arduino: Upload Sketch...` (`mushketer888.arduino.upload`)
 - `Arduino: Serial Monitor...` (`mushketer888.arduino.serial-monitor`)
 
+## Screenshots
+
+### Build Sketch
+![Build Sketch](screenshots/02-arduino-build-sketch-success.png)
+
+### Serial Monitor Config
+![Serial Monitor Config](screenshots/04-arduino-serial-monitor-dialog.png)
+
+### Serial Monitor Live Data
+![Serial Monitor Live Data](screenshots/05-arduino-serial-monitor-live-data.png)
+
 ## License
 
 [Apache 2.0](LICENSE)
