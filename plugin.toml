@@ -1,12 +1,14 @@
 id = "mushketer888.arduino"
 name = "Arduino"
-version = "0.1.1"
+version = "0.1.3"
 description = "Build, upload and monitor Arduino sketches via Arduino CLI, with board and port selection."
 authors = ["mushketer888 <mushketer888@gmail.com>"]
 license = "Apache-2.0"
-change-notes = "0.1.1 — Pass selected board FQBN to Serial Monitor, build against upstream v0.1.40 SDK, expand tests, and document required capabilities."
+change-notes = "0.1.3 — New plugin icon. Requires OpenIDEA plugin API 1.2+."
 categories = ["tools"]
-engines.openidea = "^1.0"
+engines.openidea = "^1.2"
+icon = "icon.svg"
+icon-dark = "icon_dark.svg"
 wasm = "dist/plugin.wasm"
 activation = ["on-command:*", "on-language:arduino"]
 
